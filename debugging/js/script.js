@@ -87,6 +87,23 @@ console.log("total", total);
 //given number2
 //name it getAvarge
 
+/** 
+* Adds numbers togheter and return average
+* @param {number} num1 First value
+* @param {number} num2 Second value
+* @param {number} num3 Third value 
+* @returns {number} Average of numbers
+* @example
+* ```js
+* // Add
+* num1 = 2;
+* num2 = 4;
+* num3 = 6;
+* getAverge(2, 4, 6)
+* // expect retun to be 8
+* ```
+*/
+
 function getAverge(num1, num2, num3) {
   return (num1 + num2 + num3) / 3;
 }
