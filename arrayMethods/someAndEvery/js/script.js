@@ -41,3 +41,20 @@ const isSomeCoursesFinished = modules.some((currentModule, index) => {
   console.log("index", index);
   return currentModule.isComplete === true;
 });
+
+//Introduction: every()
+
+//every() will check if each of the values in an array matches the given condition.
+//If all elements match the condition, it will return true.
+//If it finds an element that does not match the condition,
+// it will immediately break out of the every() array method and return false.
+//In short, every() will check to ensure that every element in the array matches
+// the given condition
+
+const didAllMatchConditions = values.every((value, index) => {
+  console.log("index", index, "value", value);
+  if (value >= 0) {
+    return true;
+  }
+});
+console.log('didAllMatchCondition:', didAllMatchConditions);
