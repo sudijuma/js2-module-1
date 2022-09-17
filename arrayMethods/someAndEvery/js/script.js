@@ -57,4 +57,33 @@ const didAllMatchConditions = values.every((value, index) => {
     return true;
   }
 });
-console.log('didAllMatchCondition:', didAllMatchConditions);
+console.log("didAllMatchCondition:", didAllMatchConditions);
+
+/* const values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const didAllMatchCondition = values.every((value, index) => {
+  console.log('index:', index, 'value:', value);
+  if (value <= 3) {
+    return true;
+  }
+}); */
+
+//Practical example 1: Course modules
+
+//In this example we have a list of modules as objects in an array.
+//They each contain a name string and a isComplete boolean indicating if a module has been
+//completed. We check each if each module has been completed with the every()
+//array method which breaks out of the every() array method loop as soon as it finds
+//a module that hasn’t been completed. When a module has been completed,
+//false is returned and set as the value for isCourseFinished.
+
+const module = [
+  { name: "Introduction to Programming", isComplete: true },
+  { name: "HTML", isComplete: true },
+  { name: "CSS", isComplete: false },
+  { name: "JavaScript", isComplete: true },
+];
+const isCourseFinished = module.every((currentModule) => {
+  return currentModule.isComplete === true;
+});
+console.log(isCourseFinished);
