@@ -38,9 +38,9 @@ const discountedProducts = products.filter((product) => {
         return true;
     }
 })
-    .map((product) => {
-        product.discountedProducts =
-            product.price - (DISCOUNT_PERCENTAGE / 100) * product.price;
-        return product;
+    .map((producta) => {
+        producta.discountedProduct =
+            producta.price - (DISCOUNT_PERCENTAGE / 100) * producta.price;
+        return producta;
     });
 console.log(discountedProducts);
